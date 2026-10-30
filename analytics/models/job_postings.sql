@@ -1,7 +1,7 @@
 /*SELECT * 
 FROM '../data/raw/raw_job_postings_*.parquet'*/
 
-
+{{config(materialized='view')}}
 
 SELECT
 	job_id,
